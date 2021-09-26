@@ -5,11 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title> Intro component with sign-up form  </title>
     </head>
     <body>
-        <h1> Intro component with sign-up form </h1>
-        <hr />
+        <main>
+            <article class="card">
+                <section class="card-title">
+                    <h2> Learn to code by watching others </h2>
+                    <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+                </section>
+                <section class="card-container">
+                    <section class="card-price">
+                        <button> <span> Try it free 7 days </span> then $20/mo. thereafter </button>
+                    </section>
+                    <section class="card-form">
+                        <form>
+                            <input 
+                                name="first-name"
+                                id="first-name"
+                                type="text"
+                                placeholder="First Name"
+                                required
+                            />
+                            <label id="lbl-first-name">  </label>
+
+                            <input 
+                                name="last-name"
+                                id="last-name"
+                                type="text"
+                                placeholder="Last Name"
+                                required
+                            />
+                            <label id="lbl-last-name">  </label>
+
+                            <input 
+                                name="email"
+                                id="email"
+                                type="email"
+                                placeholder="Email Address"
+                                required
+                            />
+                            <label id="lbl-email">  </label>
+
+                            <input 
+                                name="password"
+                                id="password"
+                                type="password"
+                                placeholder="Password"
+                                required
+                            />
+                            <label id="lbl-password">  </label>
+
+                            <button type="submit"> CLAIM YOUR FREE TRIAL </button>
+                            <p> By clicking the button, you are agreeing to our <span> Terms and Services </span> </p>
+                        </form>
+                    </section>
+                </section>
+            </article>
+        </main>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
