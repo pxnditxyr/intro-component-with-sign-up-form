@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title> Intro component with sign-up form  </title>
     </head>
@@ -28,36 +29,32 @@
                                 id="first-name"
                                 type="text"
                                 placeholder="First Name"
-                                required
                             />
-                            <label id="lbl-first-name">  </label>
+                            <label class="lbl-error">  </label>
 
                             <input 
                                 name="last-name"
                                 id="last-name"
                                 type="text"
                                 placeholder="Last Name"
-                                required
                             />
-                            <label id="lbl-last-name">  </label>
+                            <label class="lbl-error">  </label>
 
                             <input 
                                 name="email"
                                 id="email"
-                                type="email"
+                                type="text"
                                 placeholder="Email Address"
-                                required
                             />
-                            <label id="lbl-email">  </label>
+                            <label class="lbl-error">  </label>
 
                             <input 
                                 name="password"
                                 id="password"
                                 type="password"
                                 placeholder="Password"
-                                required
                             />
-                            <label id="lbl-password">  </label>
+                            <label class="lbl-error">  </label>
 
                             <button type="submit"> CLAIM YOUR FREE TRIAL </button>
                             <p> By clicking the button, you are agreeing to our <span> Terms and Services </span> </p>

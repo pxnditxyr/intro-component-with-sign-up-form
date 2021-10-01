@@ -1,4 +1,196 @@
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+
+    --accent-blue: hsl(248, 32%, 49%);
+
+    --neutral-dark-blue: hsl(249, 10%, 26%);
+    --neutral-grayish-blue: hsl(246, 25%, 77%);
+    --text-color: #FFF;
+    --button-border-color: hsl(0, 56%, 61%);
+    --submit-button-border-color: hsl(154, 49%, 45%);
+
+    --form-p-color: #AAA;
+}
+
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid #F00;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url( "https://i.ibb.co/b3BVNtR/bg-intro-mobile.png" );
+    background-color: var( --primary-red );
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 35px;
+}
+
+.card {
+    min-width: 285px;
+    max-width: 431px;
+    border: 1px solid #f00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var( --text-color );
+    text-align: center;
+}
+
+.card-title {
+
+}
+
+.card-title h2 {
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+
+.card-title p {
+    font-size: 14px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 285px;
+}
+
+.card-price {
+    width: 100%;
+}
+
+.card-price button {
+    background-color: var( --accent-blue );
+    color: var( --text-color );
+    padding: 15px 60px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 7px 2px 0px var( --button-border-color );
+    width: 100%;
+}
+
+.card-price span {
+    font-weight: bold;
+}
+
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+} 
+
+.card-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+} 
+
+.card-form input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 0.7em;
+    margin: 7px 0;
+}
+
+.card-form input::placeholder {
+    color: #777;
+}
+
+.card-form button {
+    background-color: var( --primary-green );
+    color: var( --text-color );
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    box-shadow: 0px 1px 1px 3px var( --submit-button-border-color );
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 20px 0;
+
+}
+
+.card-form p {
+    color: var( --form-p-color );
+    font-size: 0.6em;
+    padding: 0 15px;
+}
+
+.card-form span {
+    color: var( --primary-red );
+    font-weight: bold;
+}
+
+.lbl-error {
+    width: 100%;
+    color: var( --primary-red );
+    text-align: right;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.error {
+    border: 2px solid var( --primary-red ) !important;
+}
+
+.error::placeholder {
+    color: var( --primary-red ) !important;
+}
+
+@media screen and ( min-width: 900px ) {
+    .card {
+        flex-direction: row;
+        min-width: 800px;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .card-form {
+        font-size: 1.2em;
+    }
+    .card-title {
+        max-width: 500px;
+        text-align: left;
+        margin-right: 100px;
+    }
+    .card-title h2 {
+        font-size: 2.5em;
+    }
+
+    .card-title p {
+        font-size: 1em;
+    }
+
+    .card-form {
+        width: 100%;
+
+    }
+    .card-container {
+        max-width: 500px;
+    }
 }
